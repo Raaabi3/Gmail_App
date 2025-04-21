@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../Controllers/AuthController.dart';
 import '../Helpers/Google_Auth.dart';
 

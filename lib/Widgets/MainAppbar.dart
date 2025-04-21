@@ -10,43 +10,59 @@ class Mainappbar extends StatefulWidget {
 class _MainappbarState extends State<Mainappbar> {
   @override
   Widget build(BuildContext context) {
-    return  Row(
-          children: [
-            const Text("Gmail"),
-            const SizedBox(width: 50),
-            TextButton(
-              onPressed: () {},
-              child: const Text("Mail", style: TextStyle(color: Colors.grey)),
-            ),
-            const SizedBox(width: 10),
-            TextButton(
-              onPressed: () {},
-              child: const Text(
-                "Address book",
-                style: TextStyle(color: Colors.grey),
+    return Row(
+      children: [
+        const Text("Gmail"),
+        const SizedBox(width: 50),
+        TextButton(
+          onPressed: () {},
+          child: const Text("Mail", style: TextStyle(color: Colors.grey)),
+        ),
+        const SizedBox(width: 10),
+        TextButton(
+          onPressed: () {},
+          child: const Text(
+            "Address book",
+            style: TextStyle(color: Colors.grey),
+          ),
+        ),
+        const SizedBox(width: 10),
+        TextButton(
+          onPressed: () {},
+          child: const Text("NotePad", style: TextStyle(color: Colors.grey)),
+        ),
+        const SizedBox(width: 10),
+        TextButton(
+          onPressed: () {},
+          child: const Text("Files", style: TextStyle(color: Colors.grey)),
+        ),
+        const SizedBox(width: 10),
+        TextButton(
+          onPressed: () {},
+          child: const Text("Manage", style: TextStyle(color: Colors.grey)),
+        ),
+        const Spacer(),
+        TextButton(
+          onPressed: () {},
+          child: Row(
+            children: [
+              Text(
+                "User Name",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(width: 10),
-            TextButton(
-              onPressed: () {},
-              child: const Text(
-                "NotePad",
-                style: TextStyle(color: Colors.grey),
+              Icon(
+                Icons.arrow_drop_down, color: Colors.grey
               ),
-            ),
-            const SizedBox(width: 10),
-            TextButton(
-              onPressed: () {},
-              child: const Text("Files", style: TextStyle(color: Colors.grey)),
-            ),
-            const SizedBox(width: 10),
-            TextButton(
-              onPressed: () {},
-              child: const Text("Manage", style: TextStyle(color: Colors.grey)),
-            ),
-            const Spacer(),
-            const CircleAvatar(),
-          ],
-        );
+            ],
+          ),
+        ),
+
+        const CircleAvatar(),
+      ],
+    );
   }
 }

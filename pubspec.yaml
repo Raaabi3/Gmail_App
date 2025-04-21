@@ -73,6 +73,10 @@ flutter:
     - assets/logo/gmail.jpg
     - assets/logo/google.png
     - assets/images/Gmail_logo.jpg
+    - assets/images/Gemini.jpg
+    - assets/images/Gemini2.png
+    - assets/logo/gemini.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

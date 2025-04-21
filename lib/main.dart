@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gmail_app/Models/AuthTokenModel.dart';
 import 'package:gmail_app/Models/EmailModel.dart';
 import 'package:gmail_app/Models/LabelModel.dart';
 import 'package:gmail_app/Models/UserModel.dart';
 import 'package:gmail_app/Views/AuthScreen.dart';
+import 'package:gmail_app/Views/GmailHomeScreen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 import 'Helpers/Providers/AuthProvider.dart';
