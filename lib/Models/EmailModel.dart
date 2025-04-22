@@ -16,7 +16,7 @@ class EmailModel extends HiveObject {
   String recipient;
 
   @HiveField(4)
-  String body;
+  String body; // Changed to full body
 
   @HiveField(5)
   List<String> labels;
@@ -27,6 +27,12 @@ class EmailModel extends HiveObject {
   @HiveField(7)
   bool isRead;
 
+  @HiveField(8)
+  String threadId;
+
+  @HiveField(9)
+  List<String>? attachments;
+
   EmailModel({
     required this.id,
     required this.subject,
@@ -36,5 +42,7 @@ class EmailModel extends HiveObject {
     required this.labels,
     required this.receivedAt,
     this.isRead = false,
+    this.threadId = '',
+    this.attachments,
   });
 }

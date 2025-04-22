@@ -67,8 +67,6 @@ void checkSavedTokenAndLogin(BuildContext context) async {
       final gmailApi = gmail.GmailApi(authClient);
       final profile = await gmailApi.users.getProfile("me");
       print("Logged in as: ${profile.emailAddress}");
-
-      // If login success, go to GmailHomeScreen
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => GmailHomeScreen()),
